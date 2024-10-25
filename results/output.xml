@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.4 on win32)" generated="2024-10-24T00:05:37.435701" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotAutomation" source="C:\Users\kamal\PycharmProjects\RobotAutomation">
+<suite id="s1-s1" name="TestCases" source="C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases">
+<kw name="Before each Test Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-24T00:05:37.489214" level="INFO">Test Suite Started</msg>
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-24T00:05:37.489214" elapsed="0.008022"/>
+</kw>
+<status status="PASS" start="2024-10-24T00:05:37.489214" elapsed="0.008022"/>
+</kw>
+<suite id="s1-s1-s1" name="Data Driven" source="C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\Data_Driven">
+<suite id="s1-s1-s1-s1" name="TC 001 Read Data From Excel" source="C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\Data_Driven\TC_001_Read_Data_From_Excel.robot">
+<test id="s1-s1-s1-s1-t1" name="TC_001 Login Logout Functionality" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-24T00:05:38.487867" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com'.</msg>
+<arg>${var1}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-24T00:05:38.487867" elapsed="9.908799"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-24T00:05:48.396666" elapsed="0.177971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-24T00:05:48.590871" level="INFO">Clicking element 'xpath://a[text()='Login']'.</msg>
+<msg time="2024-10-24T00:05:49.081539" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-24T00:05:49.081539" level="FAIL">Element with locator 'xpath://a[text()='Login']' not found.</msg>
+<arg>xpath://a[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-24T00:05:48.590871" elapsed="0.506284">Element with locator 'xpath://a[text()='Login']' not found.</status>
+</kw>
+<kw name="Read Number of rows" owner="UserKeywords">
+<var>${row}</var>
+<arg>Sheet1</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.097155" elapsed="0.002523"/>
+</kw>
+<kw name=": FOR">
+<arg>${i}</arg>
+<arg>IN RANGE</arg>
+<arg>1</arg>
+<arg>$(row)+1</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<kw name="\">
+<arg>${username}=</arg>
+<arg>Read Excel Data of cell Sheet1 ${i}</arg>
+<arg>1</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<kw name="\">
+<arg>${password}=</arg>
+<arg>Read Excel Data of cell Sheet1 ${i}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<kw name="\">
+<arg>Input Text</arg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<kw name="\">
+<arg>Input Text</arg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<kw name="\">
+<arg>Click Button</arg>
+<arg>xpath://button[@type='submit']</arg>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-24T00:05:49.099678" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-24T00:05:38.487867" elapsed="10.611811">Element with locator 'xpath://a[text()='Login']' not found.</status>
+</test>
+<status status="FAIL" start="2024-10-24T00:05:37.500672" elapsed="11.599006"/>
+</suite>
+<status status="FAIL" start="2024-10-24T00:05:37.497236" elapsed="11.615959"/>
+</suite>
+<kw name="After each Test Suite" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-24T00:05:49.113195" level="INFO">Test Suite Ended</msg>
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-24T00:05:49.113195" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-24T00:05:49.113195" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-24T00:05:37.489214" elapsed="11.623981"/>
+</suite>
+<status status="FAIL" start="2024-10-24T00:05:37.441306" elapsed="11.671889"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotAutomation">RobotAutomation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">RobotAutomation.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Data Driven">RobotAutomation.TestCases.Data Driven</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="TC 001 Read Data From Excel">RobotAutomation.TestCases.Data Driven.TC 001 Read Data From Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-24T00:05:38.481859" level="ERROR">Error in file 'C:\Users\kamal\PycharmProjects\RobotAutomation\Resources\UserKeywords.robot' on line 2: Importing library 'C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\Data_Driven\ReadData.py' failed: TypeError: 'Workbook' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\Data_Driven\ReadData.py", line 14, in &lt;module&gt;
+    print(fetch_number_of_rows("Sheet1"))
+  File "C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\Data_Driven\ReadData.py", line 5, in fetch_number_of_rows
+    sh=wk(Sheetname)
+PYTHONPATH:
+  C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\Data_Driven
+  C:\Users\kamal\PycharmProjects\RobotAutomation\lib
+  C:\Users\kamal\PycharmProjects\RobotAutomation\resources
+  c:\Users\kamal\.vscode\extensions\d-biehl.robotcode-0.94.0\bundled\libs
+  c:\Users\kamal\.vscode\extensions\d-biehl.robotcode-0.94.0\bundled\tool\robotcode
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\kamal\AppData\Roaming\Python\Python310\site-packages
+  C:\Users\kamal\AppData\Roaming\Python\Python310\site-packages\win32
+  C:\Users\kamal\AppData\Roaming\Python\Python310\site-packages\win32\lib
+  C:\Users\kamal\AppData\Roaming\Python\Python310\site-packages\Pythonwin
+  C:\Program Files\Python310\lib\site-packages</msg>
+</errors>
+</robot>

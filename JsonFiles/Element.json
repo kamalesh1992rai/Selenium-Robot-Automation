@@ -1,0 +1,12 @@
+{
+    "Registration":
+    {
+        "username_textbox_name":"fId_username",
+        "email_textbox_name":"fId_email",
+        "password_textbox_name":"fId_password"
+    },
+    "Login":
+    {
+
+    }
+}
