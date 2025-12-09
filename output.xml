@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on win32)" generated="2025-01-10T00:34:25.660998" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="c:\Users\kamal\PycharmProjects\RobotAutomation\TestCases">
+<kw name="Before each Test Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-10T00:34:25.730660" level="INFO">Test Suite Started</msg>
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-10T00:34:25.718681" elapsed="0.023690"/>
+</kw>
+<status status="PASS" start="2025-01-10T00:34:25.718681" elapsed="0.023690"/>
+</kw>
+<suite id="s1-s1" name="TestCases" source="c:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\TestCases">
+<suite id="s1-s1-s1" name="TabbedWindows" source="c:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\TestCases\TabbedWindows.robot">
+<test id="s1-s1-s1-t1" name="Handle Tabbed Windows" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-10T00:34:26.196218" level="INFO">Opening browser 'Chrome' to base url 'https://www.selenium.dev'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-10T00:34:26.193591" elapsed="4.610643"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-10T00:34:30.804234" elapsed="0.008307"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2025-01-10T00:34:33.835340" level="INFO">${main_tab} = ['F69CE139C3B6BF2EF741B78D02D38387']</msg>
+<var>${main_tab}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2025-01-10T00:34:30.817801" elapsed="3.017539"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-10T00:34:33.840905" level="INFO">Executing JavaScript:
+window.open("https://www.google.com");
+Without any arguments.</msg>
+<arg>window.open("${NEW_TAB_URL}");</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-10T00:34:33.835340" elapsed="3.126532"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2025-01-10T00:34:40.008244" level="INFO">${all_tabs} = ['F69CE139C3B6BF2EF741B78D02D38387', '486C29B2159C8DCF1EF944E4512C688C']</msg>
+<var>${all_tabs}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2025-01-10T00:34:36.961872" elapsed="3.046372"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<msg time="2025-01-10T00:35:25.459454" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-10T00:35:25.462662" level="FAIL">No window matching handle, name, title or URL 'handle=486C29B2159C8DCF1EF944E4512C688C' found.</msg>
+<arg>handle=${all_tabs}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="FAIL" start="2025-01-10T00:34:40.008244" elapsed="45.464595">No window matching handle, name, title or URL 'handle=486C29B2159C8DCF1EF944E4512C688C' found.</status>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${NEW_TAB_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.477710" elapsed="0.000000"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.481107" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>handle=${main_tab}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.483668" elapsed="0.001296"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.491034" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>handle=${all_tabs}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.493053" elapsed="0.000000"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.498258" elapsed="0.000000"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<var>${remaining_tabs}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.501383" elapsed="0.000000"/>
+</kw>
+<kw name="Length Should Be" owner="BuiltIn">
+<arg>${remaining_tabs}</arg>
+<arg>1</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.501383" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-10T00:35:25.501383" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-10T00:34:26.185106" elapsed="59.322914">No window matching handle, name, title or URL 'handle=486C29B2159C8DCF1EF944E4512C688C' found.</status>
+</test>
+<status status="FAIL" start="2025-01-10T00:34:25.752704" elapsed="59.766192"/>
+</suite>
+<status status="FAIL" start="2025-01-10T00:34:25.742371" elapsed="59.780771"/>
+</suite>
+<kw name="After each Test Suite" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-10T00:35:25.540094" level="INFO">Test Suite Ended</msg>
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-10T00:35:25.538060" elapsed="0.002034"/>
+</kw>
+<status status="PASS" start="2025-01-10T00:35:25.534011" elapsed="0.006083"/>
+</kw>
+<status status="FAIL" start="2025-01-10T00:34:25.673957" elapsed="59.868159"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">TestCases.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TabbedWindows">TestCases.TestCases.TabbedWindows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

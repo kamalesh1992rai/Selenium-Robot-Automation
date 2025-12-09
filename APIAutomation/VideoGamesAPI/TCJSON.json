@@ -1,0 +1,21 @@
+{
+    "Name": "John",
+    "Age": 30,
+    "City": "New York",
+    "phone": {
+        "home": "123-456-7890",
+        "work": "987-654-3210"
+    },
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+    },
+    "hobbies": ["reading", "traveling", "cooking"],
+    "fax": {
+        "home": "123-456-7890",
+        "work": "987-654-3210"
+    }
+
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-11-26T22:56:37.485138" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases">
+<kw name="Before each Test Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-26T22:56:37.545795" level="INFO">Test Suite Started</msg>
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-26T22:56:37.545351" elapsed="0.002191"/>
+</kw>
+<status status="PASS" start="2025-11-26T22:56:37.544610" elapsed="0.003113"/>
+</kw>
+<suite id="s1-s1" name="TC025 validate text on element" source="C:\Users\kamal\PycharmProjects\RobotAutomation\TestCases\TC025_validate_text_on_element.robot">
+<test id="s1-s1-t1" name="TC025_validate_text_on_element" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-26T22:56:38.088458" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<arg>${var1}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-26T22:56:38.088150" elapsed="3.563682"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-26T22:56:41.652308" elapsed="0.040277"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-26T22:56:41.693765" level="INFO">Verifying element 'xpath://*[@id="tab-content1"]/p' contains exact text 'Register now and kick start your career as a Software Testing Pro!'.</msg>
+<msg time="2025-11-26T22:56:41.844196" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-26T22:56:41.844692" level="FAIL">Element with locator 'xpath://*[@id="tab-content1"]/p' not found.</msg>
+<arg>xpath://*[@id="tab-content1"]/p</arg>
+<arg>Register now and kick start your career as a Software Testing Pro!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2025-11-26T22:56:41.692923" elapsed="0.187497">Element with locator 'xpath://*[@id="tab-content1"]/p' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<arg>kamlesh1992rai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-26T22:56:41.882029" elapsed="0.000254"/>
+</kw>
+<status status="FAIL" start="2025-11-26T22:56:38.087484" elapsed="3.795240">Element with locator 'xpath://*[@id="tab-content1"]/p' not found.</status>
+</test>
+<status status="FAIL" start="2025-11-26T22:56:37.547825" elapsed="4.336228"/>
+</suite>
+<kw name="After each Test Suite" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-26T22:56:41.888397" level="INFO">Test Suite Ended</msg>
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-26T22:56:41.887479" elapsed="0.001139"/>
+</kw>
+<status status="PASS" start="2025-11-26T22:56:41.886302" elapsed="0.002640"/>
+</kw>
+<status status="FAIL" start="2025-11-26T22:56:37.509169" elapsed="4.379865"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestCases" id="s1" pass="0" fail="1" skip="0">TestCases</stat>
+<stat name="TC025 validate text on element" id="s1-s1" pass="0" fail="1" skip="0">TestCases.TC025 validate text on element</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

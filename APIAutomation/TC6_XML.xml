@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee>
+        <name>John Doe</name>
+        <age>30</age>
+        <department>HR</department>
+        <salary>50000</salary>
+    </employee>
+    <employee>
+        <name>Jane Smith</name>
+        <age>25</age>
+        <department>IT</department>
+        <salary>60000</salary>
+    </employee>
+    <employee>
+        <name>Mike Johnson</name>
+        <age>35</age>
+        <department>Finance</department>
+        <salary>70000</salary>
+    </employee>
+</employees>

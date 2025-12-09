@@ -9,6 +9,8 @@ ${URL}   http://www.thetestingworld.com/testings
 *** Test Cases ***
 Robot first test case
     [Tags]  Smoke
+    Open Browser  ${URL}  ${Browser}
+    Maximize Browser Window
     ${username}=  Read Element Locator  Registration.username_textbox_name
     Input Text  name:${username}  Testing
     ${password}=  Read Element Locator  Registration.password_textbox_name
